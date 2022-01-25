@@ -8,18 +8,18 @@ $resultat = "";
 
 if (is_numeric($valeur))
 {
-    if ($valeur > 0)
+    switch ($valeur)
     {
-        $resultat = "positive";
-    }
-    else if ($valeur < 0)
-    {
-        $resultat = "négative";
-    }
-    
-    else
-    {
-        $resultat = "nulle";
+        case ($valeur > 0):
+            $resultat = "positive";
+            break;
+
+        case ($valeur > 0):
+            $resultat = "négative";
+            break;
+
+        default:
+            $resultat = "nulle";
     }
 }
 
