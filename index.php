@@ -2,6 +2,12 @@
 
 <?php
 
+require_once "fonctions.php";
+
+$greetings = bonjourPerso(42);
+
+echo $greetings;
+
 $valeur = "";
 $resultat = "";
 
@@ -25,10 +31,15 @@ if (is_numeric($valeur))
 
 else 
 {
-    $resultat = "non numérique"
+    $resultat = "non numérique";
 }
 
-echo "<p>La variable est $resultat<p/>"; 
+echo "<p>La variable est $resultat</p>"; 
 
 
 // $resultat = ($valeur > 0) ? "positive" : (($valeur < 0) ? "négative" : "nulle");
+
+?>
+
+<p><a href="boucles.php">Boucles</a></p>
+<p><a href="inclusions.php">Inclusions</a></p>

@@ -2,7 +2,7 @@
 
 $resultat = "<ul>";
 
-for ($cnt=0; $cnt < 100; $cnt++) 
+for ($cnt=0; $cnt < 100; $cnt+=5) 
 { 
     if ($cnt % 3 == 0)
     {
