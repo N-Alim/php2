@@ -3,6 +3,18 @@
 <?php
 
 require_once "fonctions.php";
+require_once "constantes.php";
+
+var_dump(TVA);
+
+/*
+__LINE__
+__DIR__
+__FILE__
+__FUNCTION__
+*/
+
+echo "<p>Afficher n° ligne: " . __DIR__ . "</p>";
 
 $greetings = bonjourPerso(42);
 
@@ -38,6 +50,12 @@ echo "<p>La variable est $resultat</p>";
 
 
 // $resultat = ($valeur > 0) ? "positive" : (($valeur < 0) ? "négative" : "nulle");
+
+$surface = surfaceRect(10, 50);
+var_dump($surface);
+
+$volume = volumeParallepipede(10 , 60, 81);
+var_dump($volume);
 
 ?>
 
