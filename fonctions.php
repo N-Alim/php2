@@ -47,3 +47,15 @@ function listAffichage(Array $tab) : string
 
     return $result;
 }
+
+function factorielle($nombre)
+{
+    if ($nombre == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return $nombre * factorielle($nombre - 1);
+    }
+}
